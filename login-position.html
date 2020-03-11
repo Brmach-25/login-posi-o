@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+        
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans&display=swap);
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css);
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        /*border: 10px solid black;*/
+        height: 100%;
+    }
+
+    body { 
+        color: #949494;
+        background-image: url('./horizonte-image.jpg');
+        background-repeat: no-repeat;
+        background-color: grey;
+        /*background-size: 100%;*/
+        background-size: cover;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+
+      } 
+        
+    #form-container{
+        position: fixed;
+        left: calc(50% - 400px);
+        top: calc(50% - (350px / 2));
+        width: 800px;
+        height: 350px;
+        padding: 100px 40px;
+        background-color: #1d2229;
+        opacity: 0.9;
+        border: 1px solid #1d2229;
+        border-radius: 10px;
+        
+    }
+
+     #singup {
+         width: 280px;
+         
+     }   
+
+     #singup h1 {
+         width: 70%;
+         font-size: 20px;
+         font-weight: 100;
+
+         
+      
+     }
+     #singup p {
+         margin-top: 10px;
+         margin-bottom: 30px;
+     }
+     form{
+         position: absolute;
+         top: -10%;
+         padding: 70px 40px;
+         right: 40px;
+         background-color: white;
+         color: black;
+         width: 50%;
+         height: 120%;
+         border-radius: 10px;
+         
+
+     }
+
+     form h2 { 
+         color: #e4968a;
+         padding: 20px 0;
+         font-size: 20px;
+         text-transform: uppercase;
+     }
+
+     form .linha{
+         padding: 5px 0;
+         border-bottom: 1px solid #e2e2e4;
+
+     }
+
+     form .linha input {
+         width: 95%;
+         height: 35px;
+         font-size: 12px;
+         color:  #e2e2e4;
+         border: none;
+         
+     }
+
+     form .linha i {
+         color: grey;
+
+         
+
+     }
+     #forgot-login button {
+         width: 48%;
+         height: 35px;
+         color: #bdbdbd;
+         
+
+
+     }
+     form #forgot-login #login {
+         background-color: #e4968a;
+         color: white;
+         text-transform: uppercase;
+         border: 1px solid #e4968a;
+         border-radius: 3px;
+         cursor: pointer;
+
+
+     }
+
+     #singup #sing-up  {
+         border: 1px solid #949494;
+         border-radius: 10px;
+         color: #949494;
+         padding: 10px 20px;
+         margin-top: 100px;
+         
+
+
+
+     }
+
+
+
+
+    
+    
+   
+
+   
+        </style>
+</head>
+<body>
+    
+  <main id="form-container">
+      <div id="singup">
+          <h1>Don't have an account?</h1>
+          <p>Banjo tote bicycle rights. High Life sartorial cray craft beer whatever street art fap.</p>
+          
+          <a href="#" id="sing-up">SING UP</a>
+      </div>
+
+      <form action="">
+    <h2>LOG IN</h2>
+    <div class="linha">
+        <input type="email" id="email" placeholder="Email">
+        <i class="fas fa-envelope"></i>
+   </div>
+   <div class="linha">
+       <input type="password" id="senha" placeholder="Password">
+       <i class="fas fa-lock"></i>
+   </div>
+
+    <div id="forgot-login">
+        <button id="forgot">Forgot password?</button>
+        <button id="login">Log in</button>
+    </div>   
+      
+   
+
+      </form>
+
+  </main>
+</body>
+</html>
